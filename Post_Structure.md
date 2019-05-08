@@ -1,3 +1,5 @@
+### Cấu trúc của post
+
 ``` javascript
 const post_structure = {
 	id: 990,
