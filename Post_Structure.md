@@ -54,9 +54,11 @@ const post_structure = {
 	// Nếu là tin bài báo thì content là 1 mảng các object {type,content,link}
 	// Nếu là tin mạng xã hội thì content là 1 string text.
 };
+```
 
-// -------------------------------------------------------------
+### Ví dụ tin bài báo
 
+``` javascript
 const example_news = {
 	id: 988,
 	authorId: 'f0bf4797-fa2d-4202-a741-681104439518',
@@ -73,9 +75,11 @@ const example_news = {
 	categories: [3, 5, 7],
 	content: 'VIỆT NAM CÓ GÌ HAY\n\nTừ ngày dùng facebook thấy có khá nhiều bạn có cái nhìn thiếu tích cực về Việt Nam, nào là quốc gia nghèo khó, thu nhập đầu người thấp, kinh tế càng ngày càng tụt hậu, tham nhũng tràn lan, giáo dục lạc hậu, y tế quá tải, giao thông ùn tắc, không khí ô nhiễm, thực phẩm bẩn, độc hại..., từ đó một số bạn khái quát là “đến cái cột điện mà biết đi cũng bỏ nước mà ra đi”.\n\nThế nhưng thực tế là chúng ta và hơn 95 triệu người dân Việt Nam vẫn đang hàng ngày sinh sống, học tập và làm việc trên đất nước Việt Nam này.\n\nSống ở một quốc gia, sống ở một xã hội mà không yêu quí nó, không trân trọng nó, suốt ngày bới lông tìm vết, tìm điểm xấu, tìm cái dở để chỉ trích, chê bai, dè bỉu thì đúng là không thể hạnh phúc; sống như thế thì khổ lắm, không những khổ mình mà còn khổ gia đình, người thân, bạn bè, đồng nghiệp, khổ cả những người xung quanh nữa.\n\nChính vì vậy tôi đi tìm các điểm tích cực, các điểm tốt, xem Việt Nam liệu có gì hay, có gì tốt để cuộc sống thêm lạc quan, thêm hạnh phúc. Hay tốt ở đây là hay tốt theo chuẩn quốc tế, được các tổ chức quốc tế ghi nhận bằng những số liệu khách quan, chứ không phải hay theo kiểu tự sướng.\n\nSau đây là những điểm hay, điểm tốt của Việt Nam được các tổ chức quốc tế ghi nhận:\n1. Đất nước không có khủng bố: đứng số 1 thế giới\n2. Tác động kinh tế của bạo lực và xung đột: thấp thứ 21 thế giới\n3. Số người chết vì cháy nổ: thấp thứ 24 thế giới\n4. Tội phạm giết người: Trong nhóm 25% thấp nhất thế giới\n5. Chết vì tự tử: Trong nhóm 35% thấp nhất thế giới\n6. Tăng trưởng kinh tế: Thuộc top 5 quốc gia cao nhất thế giới\n7. Hạnh phúc và hài lòng với cuộc sống: Thứ 95 hay top 5 quốc gia hạnh phúc\n\nĐẤT NƯỚC KHÔNG CÓ KHỦNG BỐ\n\nTheo diễn đàn kinh tế thế giới WEF, Việt Nam là quốc gia không có tổ chức khủng bố, năm 2018 được 100 điểm tuyệt đối, cùng 21 quốc gia xếp số 1 thế giới về an ninh.\n\nTheo Viện kinh tế và hoà bình IEP (Úc), tính 20 năm (1998-2017), Việt Nam được xếp hạng 104 trên 138 quốc gia trong danh sách quốc gia về tội phạm khủng bố. Các bạn có biết trong khi đó Mỹ, Anh, Pháp, Đức, Canada, Úc, Nhật và một số nước châu Âu giàu có khác lại đứng thứ 20 đến 68 trong danh sách các quốc gia khủng bố, với điểm số cao gấp Việt Nam từ 5 đến 10 lần. Trong Asean Philippines, Thái Lan, Myanmar, Indonesia, Malaysia lần lượt xếp thứ 10, 17, 24, 42 và 70 thế giới, với điểm số cao gấp Việt Nam từ 4 đến 11 lần.\n\nBẠO LỰC VÀ XUNG ĐỘT\n\nTheo Viện kinh tế và Hoà bình IEP (Úc), Việt Nam được xếp thứ 21 trên 163 quốc gia về tiêu chí kinh tế ít chịu tác động của bạo lực và xung đột, trong khi đó Mỹ, Anh, Pháp, Úc, Ba Lan, Hungary, Hàn Quốc, Singapore... đều bị tác động lớn hơn Việt Nam rất nhiều.\n\nCHÁY NỔ VÀ GIẾT NGƯỜI\n\nTheo tổ chức Y tế thế giới WHO, Việt Nam được xếp thứ 24 trên 183 quốc gia có tỷ lệ chết người do cháy nổ thấp nhất thế giới.\n\nTheo diễn đàn kinh tế thế giới WEF, Việt Nam được xếp hạng 49 trên 140 quốc gia, tính theo số vụ giết người thấp nhất thế giới.\n\nTỰ TỬ\n\nTheo tổ chức Y tế thế giới WHO, Việt Nam thuộc top 35% quốc gia ít tự tử (đứng thứ 126 trên 183 quốc gia, tính theo số người chết do tự tử trong 100.000 dân).\n\nĐiểm rất lạ là các nước Âu, Mỹ, Hàn Quốc, Nhật Bản... lại có số người chết do tự tử cao hơn, thậm chí rất cao. Các nước giàu có có số người chết do tự tử cao có thể kể đến Hàn Quốc (cao thứ 10 thế giới), Bỉ (22), Nhật Bản (26), Phần Lan(36), Thuỵ Điển (42), Pháp (45), Mỹ (47), New Zealand (52), Áo (62), Thuỵ Sĩ (75), Úc (84), Hà Lan, Na Uy, Đan Mạch.... Bên cạnh chúng ta Thái Lan xếp thứ 44 và Singapore xếp thứ...\n\nHoá ra không phải cứ giàu có là hạnh phúc.\n\nTĂNG TRƯỞNG KINH TẾ CAO\n\nTheo con số thống kê của các tổ chức quốc tế (WB, IMF, UN...), Việt Nam thuộc top 5 quốc gia có tốc độ tăng trưởng kinh tế (GDP đầu người) cao nhất thế giới trong vòng 25 năm (1991-2016).\n\nTrong 25 năm (1991-2016), mức sống của người dân Việt Nam đã được nâng lên 3.87 lần, chỉ sau các nước Guinea xích đạo, Trung Quốc, Myanmar và Iraq. Cũng trong khoảng thời gian này Mỹ, Anh, Đức, Pháp, Nhật Bản, Canada, Úc, Italy và các nước Tây Âu chỉ nâng được có 1.15 đến 1.69 lần, còn các nước Asean như Philippines, Thái Lan, Indonesia, Malaysia, Singapore chỉ nâng lên được có 1.86, 2.20, 2.22, 2.28 và 2.32 lần.\n\nĐiểm này quan trọng lắm. Cuộc sống cứ năm nay tốt hơn năm trước, ngày hôm nay tốt hơn ngày hôm qua là vui, là hạnh phúc, còn cứ dậm chân tại chỗ, hoặc thụt lùi thì ai cũng không vui cả, kể cả người giàu.\n\n(tiếp: Việt Nam có là quốc gia Hạnh phúc)',
 };
+```
 
-// --------------------------------------------------------------------------
+### Ví dụ tin mạng xã hội
 
+``` javascript
 const example_news_social = {
 	id: 980,
 	authorId: 'fdc82cb7-32c9-4d0f-a198-46b879de6ee1',
