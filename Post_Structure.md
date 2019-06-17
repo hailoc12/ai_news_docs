@@ -11,6 +11,19 @@ const post_structure = {
 	// Nếu là tin mạng xã hội thì title null
 	displayType: 0,
 	// Kiểu hiển thị 0:Tin bài báo hoặc 1:Tin mạng xã hội
+	tag: [
+		{
+			tag: 'Chiến thắng điện biên phủ chấn động địa cầu lừng lẫy năm châu 7/1954',
+			// name của group (String)
+			point: 10.28,
+			// trọng số group (Number)
+		},
+		{
+			tag: 'Loạn 64 sứ quân',
+			point: 9.91,
+		},
+	],
+	// mảng các group của bài viết [{tag: String,point: Number}]
 	featureImages: [
 		'https://scontent.fhan3-1.fna.fbcdn.net/v/t1.0-0/p235x165/57104150_10214495057472161_7305707463183958016_n.jpg?_nc_cat=110&_nc_oc=AQniw6Gnl9MofZqtebVpfE30-NWT4As8Oq2_a17Vpup8muKL3FdC1Tt6DCyiUd_st0Q&_nc_ht=scontent.fhan3-1.fna&oh=b0a67b66f4a817f12d66a04f5e8262fb&oe=5D6EEA3B'
 	],
@@ -64,6 +77,16 @@ const example_news = {
 	authorId: '27112929982144',
 	title: null,
 	displayType: 1,
+	tag: [
+		{
+			tag: 'Chiến thắng điện biên phủ chấn động địa cầu lừng lẫy năm châu 7/1954',
+			point: 10.28,
+		},
+		{
+			tag: 'Loạn 64 sứ quân',
+			point: 9.91,
+		},
+	],
 	featureImages: [
 		'https://scontent.fhan3-1.fna.fbcdn.net/v/t1.0-0/p235x165/57104150_10214495057472161_7305707463183958016_n.jpg?_nc_cat=110&_nc_oc=AQniw6Gnl9MofZqtebVpfE30-NWT4As8Oq2_a17Vpup8muKL3FdC1Tt6DCyiUd_st0Q&_nc_ht=scontent.fhan3-1.fna&oh=b0a67b66f4a817f12d66a04f5e8262fb&oe=5D6EEA3B',
 		'https://scontent.fhan3-2.fna.fbcdn.net/v/t1.0-0/p235x165/56209467_132725541134701_3838937495395893248_n.jpg?_nc_cat=103&_nc_oc=AQnzdV1ffgQwZsMv-l1FBep33vW86jrCSk3gwXw3wAEtszk1B35WM63l-1TRTRjt74g&_nc_ht=scontent.fhan3-2.fna&oh=0bba6694f453ad3fb024ca2f73a70f87&oe=5D2B9EE4',
@@ -88,6 +111,16 @@ const example_news_social = {
 		'https://scontent.fhan3-1.fna.fbcdn.net/v/t1.0-0/s261x260/54434644_130300471377208_1019489974665347072_n.jpg?_nc_cat=111&_nc_oc=AQn0tpgC7PeNEbFYG-iSKngFyFrnSPxczPwVJU7mzUHVwwjnfpismdy5Xq67wdm5Vws&_nc_ht=scontent.fhan3-1.fna&oh=70c01c004771fc037a8dd4aacf955ef8&oe=5D63AE56'
 	],
 	displayType: 0,
+	tag: [
+		{
+			tag: 'Chiến thắng điện biên phủ chấn động địa cầu lừng lẫy năm châu 7/1954',
+			point: 10.28,
+		},
+		{
+			tag: 'Loạn 64 sứ quân',
+			point: 9.91,
+		},
+	],
 	createdAt: '2019-05-07T10:50:33.000Z',
 	content: [
 		{
