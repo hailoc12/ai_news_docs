@@ -3,24 +3,25 @@
 ``` javascript
 const post_structure = {
 	id: '997855787078548',
-	// Id của post, (String)
-	authorId: '270139599850174',
-	// Id của tác giả (String)
+	// Id của post, (String), dài không quá 100 kí tự
+	authorId: '270139599850174', dài không quá 100 ký tự
+	// Id của tác giả (String), 
 	title: 'Tui cũng vầy nè. Tui thích những bộ Tui cũng vầy nè',
 	// Nếu là tin bài báo thì title là string
 	// Nếu là tin mạng xã hội thì title null
+	// title không được trống và chứa không quá 800 ký tự
 	displayType: 0,
 	// Kiểu hiển thị 0:Tin bài báo hoặc 1:Tin mạng xã hội
 	tag: [
 		{
 			tag: 'Chiến thắng điện biên phủ chấn động địa cầu lừng lẫy năm châu 7/1954',
-			// name của group (String)
-			point: 10.28,
-			// trọng số group (Number)
+			// name của group (String), dài không quá 600 kí tự
+			point: 10,
+			// trọng số group (Number), số tự nhiên [1,1000]
 		},
 		{
 			tag: 'Loạn 64 sứ quân',
-			point: 9.91,
+			point: 9,
 		},
 	],
 	// mảng các group của bài viết [{tag: String,point: Number}]
@@ -37,7 +38,7 @@ const post_structure = {
 		'amthuc',
 		'bongda',
 	],
-	// Mảng các Id của category [String]
+	// Mảng các Id của category [String], mỗi id dài không quá 50 kí tự
 	content: [
 		{
 			type: 'text',
@@ -80,11 +81,11 @@ const example_news = {
 	tag: [
 		{
 			tag: 'Chiến thắng điện biên phủ chấn động địa cầu lừng lẫy năm châu 7/1954',
-			point: 10.28,
+			point: 10,
 		},
 		{
 			tag: 'Loạn 64 sứ quân',
-			point: 9.91,
+			point: 9,
 		},
 	],
 	featureImages: [
@@ -114,11 +115,11 @@ const example_news_social = {
 	tag: [
 		{
 			tag: 'Chiến thắng điện biên phủ chấn động địa cầu lừng lẫy năm châu 7/1954',
-			point: 10.28,
+			point: 10,
 		},
 		{
 			tag: 'Loạn 64 sứ quân',
-			point: 9.91,
+			point: 9,
 		},
 	],
 	createdAt: '2019-05-07T10:50:33.000Z',
