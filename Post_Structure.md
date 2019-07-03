@@ -4,8 +4,8 @@
 const post_structure = {
 	id: '997855787078548',
 	// Id của post, (String), dài không quá 100 kí tự
-	authorId: '270139599850174', dài không quá 100 ký tự
-	// Id của tác giả (String), 
+	authorId: '270139599850174',
+	// Id của tác giả (String), dài không quá 100 ký tự
 	title: 'Tui cũng vầy nè. Tui thích những bộ Tui cũng vầy nè',
 	// Nếu là tin bài báo thì title là string
 	// Nếu là tin mạng xã hội thì title null
