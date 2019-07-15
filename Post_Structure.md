@@ -4,8 +4,9 @@
 const post_structure = {
 	id: '997855787078548',
 	// Id của post, (String), dài không quá 100 kí tự
-	authorId: '270139599850174', dài không quá 100 ký tự
-	// Id của tác giả (String), 
+	authorId: '270139599850174',
+	// dài không quá 100 ký tự
+	// Id của tác giả (String),
 	title: 'Tui cũng vầy nè. Tui thích những bộ Tui cũng vầy nè',
 	// Nếu là tin bài báo thì title là string
 	// Nếu là tin mạng xã hội thì title null
@@ -26,10 +27,10 @@ const post_structure = {
 	],
 	// mảng các group của bài viết [{tag: String,point: Number}]
 	featureImages: [
-	    {
-	      large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
-	      small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
-	    },
+		{
+			large: 'https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg',
+			small: 'https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg',
+		},
 	],
 	// Mảng các link ảnh [ { large , small } ]
 	// Nếu là tin bài báo featureImages chỉ chứa 1 ảnh
@@ -53,9 +54,9 @@ const post_structure = {
 			type: 'image',
 			// kiểu data [text,image]
 			link: {
-	      large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
-	      small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
-	    },
+				large: 'https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg',
+				small: 'https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg',
+			},
 			// link image
 		},
 		{
@@ -65,9 +66,9 @@ const post_structure = {
 		{
 			type: 'image',
 			link: {
-	      large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
-	      small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
-	    },
+				large: 'https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg',
+				small: 'https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg',
+			},
 		},
 		{
 			type: 'text',
@@ -99,9 +100,9 @@ const example_news = {
 	],
 	featureImages: [
 		{
-	    large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
-	    small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
-	  },
+			large: 'https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg',
+			small: 'https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg',
+		},
 	],
 	createdAt: '2019-05-07T10:50:33.000Z',
 	categories: ['amnhac', 'cntt', 'daotao'],
@@ -113,9 +114,9 @@ const example_news = {
 		{
 			type: 'image',
 			link: {
-	      large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
-	      small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
-	    },
+				large: 'https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg',
+				small: 'https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg',
+			},
 		},
 		{
 			type: 'text',
@@ -124,9 +125,9 @@ const example_news = {
 		{
 			type: 'image',
 			link: {
-	      large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
-	      small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
-	    },
+				large: 'https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg',
+				small: 'https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg',
+			},
 		},
 		{
 			type: 'text',
@@ -143,18 +144,18 @@ const example_news_social = {
 	id: '270139599850174',
 	authorId: '270139599850174',
 	featureImages: [
-    {
-	    large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
-	    small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
-    },
-    {
-	    large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
-	    small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
-    },
-    {
-	    large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
-	    small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
-	  }
+		{
+			large: 'https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg',
+			small: 'https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg',
+		},
+		{
+			large: 'https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg',
+			small: 'https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg',
+		},
+		{
+			large: 'https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg',
+			small: 'https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg',
+		},
 	],
 	displayType: 1,
 	tag: [
