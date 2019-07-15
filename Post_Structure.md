@@ -31,9 +31,9 @@ const post_structure = {
 	        small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
 	    },
 	],
-	// Mảng các link ảnh [String]
-	// Nếu là tin bài báo featureImages chỉ chứa 1 link ảnh
-	// Nếu là tin mạng xã hội featureImages chỉ chứa 0,1 hoặc nhiều link ảnh
+	// Mảng các link ảnh [ { large , small } ]
+	// Nếu là tin bài báo featureImages chỉ chứa 1 ảnh
+	// Nếu là tin mạng xã hội featureImages chỉ chứa 0,1 hoặc nhiều ảnh
 	createdAt: '2019-05-07T10:50:33.000Z',
 	// Timestamp bài báo được viết lúc nào
 	categories: [
@@ -52,7 +52,10 @@ const post_structure = {
 		{
 			type: 'image',
 			// kiểu data [text,image]
-			link: 'https://image.thanhnien.vn/660/uploaded/vubang/2019_04_24/tham-sat-binh-duong-3_lutz.jpg',
+			link: {
+	        large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
+	        small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
+	    },
 			// link image
 		},
 		{
@@ -61,7 +64,10 @@ const post_structure = {
 		},
 		{
 			type: 'image',
-			link: 'https://image.thanhnien.vn/660/uploaded/vubang/2019_04_24/tham-sat-binh-duong-1_bjhe.jpg',
+			link: {
+	      large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
+	      small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
+	    },
 		},
 		{
 			type: 'text',
@@ -92,7 +98,10 @@ const example_news = {
 		},
 	],
 	featureImages: [
-		'https://scontent.fhan3-1.fna.fbcdn.net/v/t1.0-0/p235x165/57104150_10214495057472161_7305707463183958016_n.jpg?_nc_cat=110&_nc_oc=AQniw6Gnl9MofZqtebVpfE30-NWT4As8Oq2_a17Vpup8muKL3FdC1Tt6DCyiUd_st0Q&_nc_ht=scontent.fhan3-1.fna&oh=b0a67b66f4a817f12d66a04f5e8262fb&oe=5D6EEA3B',
+		{
+	    large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
+	    small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
+	  },
 	],
 	createdAt: '2019-05-07T10:50:33.000Z',
 	categories: ['amnhac', 'cntt', 'daotao'],
@@ -103,7 +112,10 @@ const example_news = {
 		},
 		{
 			type: 'image',
-			link: 'https://image.thanhnien.vn/660/uploaded/vubang/2019_04_24/tham-sat-binh-duong-3_lutz.jpg',
+			link: {
+	        large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
+	        small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
+	    },
 		},
 		{
 			type: 'text',
@@ -111,7 +123,10 @@ const example_news = {
 		},
 		{
 			type: 'image',
-			link: 'https://image.thanhnien.vn/660/uploaded/vubang/2019_04_24/tham-sat-binh-duong-1_bjhe.jpg',
+			link: {
+	        large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
+	        small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
+	    },
 		},
 		{
 			type: 'text',
@@ -128,11 +143,18 @@ const example_news_social = {
 	id: '270139599850174',
 	authorId: '270139599850174',
 	featureImages: [
-		'https://scontent.fhan3-1.fna.fbcdn.net/v/t1.0-0/s261x260/54434644_130300471377208_1019489974665347072_n.jpg?_nc_cat=111&_nc_oc=AQn0tpgC7PeNEbFYG-iSKngFyFrnSPxczPwVJU7mzUHVwwjnfpismdy5Xq67wdm5Vws&_nc_ht=scontent.fhan3-1.fna&oh=70c01c004771fc037a8dd4aacf955ef8&oe=5D63AE56',
-		'https://scontent.fhan3-2.fna.fbcdn.net/v/t1.0-0/p235x165/56209467_132725541134701_3838937495395893248_n.jpg?_nc_cat=103&_nc_oc=AQnzdV1ffgQwZsMv-l1FBep33vW86jrCSk3gwXw3wAEtszk1B35WM63l-1TRTRjt74g&_nc_ht=scontent.fhan3-2.fna&oh=0bba6694f453ad3fb024ca2f73a70f87&oe=5D2B9EE4',
-		'https://scontent.fhan3-3.fna.fbcdn.net/v/t1.0-0/s526x296/55759798_132725507801371_3208767653069979648_n.jpg?_nc_cat=108&_nc_oc=AQm8GxUs3w6Y1pFgK7jXB49rcVTxR9tBykAWOA57ZWWgX9IILrOJRru2HhzD7OaysEc&_nc_ht=scontent.fhan3-3.fna&oh=2bc52bc54e8356e59891a9fc3023033d&oe=5D73CBB2',
-		'https://scontent.fhan3-1.fna.fbcdn.net/v/t1.0-0/q92/p261x260/57379431_139876470419608_8129178291555794944_n.jpg?_nc_cat=111&_nc_oc=AQkhR1eE9Ny5cU1fMVlnkZ030uY8-220QAZmqWMei6jADhTt9Ba4rdamSQ8kzuQuKx0&_nc_ht=scontent.fhan3-1.fna&oh=f9e8a380a0f9c3479bbc7a775bd91141&oe=5D703380',
-		'https://scontent.fhan4-1.fna.fbcdn.net/v/t1.0-0/p235x350/57094348_10214495055112102_907792259141861376_n.jpg?_nc_cat=104&_nc_oc=AQn4raWOkZ23zH6OMs5iAzr-zHNubyVtYFpynMLcJDGB3Wilbe1q0u1p7XHePO9PdbU&_nc_ht=scontent.fhan4-1.fna&oh=ec90a8cbd67156d4ea386ece0ccaf491&oe=5D745DDA',
+    {
+	    large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
+	    small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
+    },
+    {
+	    large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
+	    small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
+    },
+    {
+	    large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
+	    small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
+	  }
 	],
 	displayType: 1,
 	tag: [
