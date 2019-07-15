@@ -27,8 +27,8 @@ const post_structure = {
 	// mảng các group của bài viết [{tag: String,point: Number}]
 	featureImages: [
 	    {
-	        large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
-	        small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
+	      large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
+	      small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
 	    },
 	],
 	// Mảng các link ảnh [ { large , small } ]
@@ -53,8 +53,8 @@ const post_structure = {
 			type: 'image',
 			// kiểu data [text,image]
 			link: {
-	        large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
-	        small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
+	      large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
+	      small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
 	    },
 			// link image
 		},
@@ -113,8 +113,8 @@ const example_news = {
 		{
 			type: 'image',
 			link: {
-	        large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
-	        small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
+	      large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
+	      small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
 	    },
 		},
 		{
@@ -124,8 +124,8 @@ const example_news = {
 		{
 			type: 'image',
 			link: {
-	        large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
-	        small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
+	      large:"https://i-vnexpress.vnecdn.net/2019/07/14/thu-ha-2647-1563099674.jpg",
+	      small:"https://i-vnexpress.vnecdn.net/2019/07/14/bao1-8955-1563105780.jpg",
 	    },
 		},
 		{
